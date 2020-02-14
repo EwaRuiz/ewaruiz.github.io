@@ -574,7 +574,7 @@ section.center3 {
 img.surveys, .stories, .wireframes, .branding {
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 100%;
+  max-width: 100%;
 }
 
 img.companylogo, .personas, .flow, .sketches, .moodboard, .logoprocess, .test1, .test2,
@@ -583,14 +583,17 @@ img.companylogo, .personas, .flow, .sketches, .moodboard, .logoprocess, .test1, 
   display: block;
   margin: 0 auto;
   margin-bottom: 0px;
+  max-width: 100%;
 }
 
 img.test2, .test3, .usertesting2, .mockups{
   margin-top: 88px;
+  max-width: 100%;
 }
 
 img.usertesting2, .mockups {
   margin-bottom: 80px;
+  max-width: 100%;
 }
 
 /* --------------------- END------------- */
