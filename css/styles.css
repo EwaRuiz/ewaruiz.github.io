@@ -1,0 +1,810 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #DEEAF6;
+}
+
+/* Global */
+.container {
+  width: 85%;
+  margin:auto;
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Header */
+
+header {
+  background: #DEEAF6;
+  padding-top: 30px;
+  min-height: 70px;
+  box-sizing: border-box;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 16px;
+}
+
+header li {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  float: left;
+  display: inline;
+  padding: 0 30px 0 30px;
+  transition: 0.5s;
+
+}
+
+header #branding {
+  float: left;
+  margin-bottom: 112px;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+}
+
+header a:hover {
+  background: -webkit-linear-gradient(#C31432, #240B36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ li.current {
+  background: -webkit-linear-gradient(#C31432, #240B36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.links li:hover {
+  font-weight: 600;
+  transform: scale(1.1);
+  /* text-shadow: 0 0 .40px #C31432, 0 0 .40px #C31432; -- 1 color bold shadow effect */
+}
+
+img.user {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section */
+
+section {
+  background-color: #DEEAF6
+}
+
+/* ------------------- ABOUT.HTML ---------------- */
+
+#main_0 .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 3rem;
+}
+
+#main_0 h1 {
+  font-family: "LibreBaskerville", serif;
+  width: 100%;
+  font-size: 54px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  background: -webkit-linear-gradient(#C31432, #240B36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
+  text-align: left;
+}
+
+#main_0 p {
+  font-family: "Source Sans Pro", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #252627;
+  margin-right: 0px;
+  width: auto;
+  text-align: left;
+}
+
+
+
+/* Showcase */
+
+
+#showcase2 .container {
+  background-color: #DEEAF6;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 3rem;
+}
+
+#showcase2 h1 {
+  font-family: "LibreBaskerville", serif;
+  width: 100%;
+  font-size: 54px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  background: -webkit-linear-gradient(#C31432, #240B36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
+}
+
+#showcase2 p {
+  font-family: "Source Sans Pro", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #252627;
+  margin-right: 0px;
+  width: auto;
+}
+
+/* main */
+
+#main_1 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 24px;
+}
+
+#main_1 h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+#main_1 p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  width: 85%;
+  display: inline-block;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 48px;
+  line-height: 1.7;
+}
+
+#main_1 p.quote {
+  font-family: "LibreBaskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 72px;
+}
+
+div#main_1.container {
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+/* ---------------- END OF ABOUT.HTML -------------- */
+
+
+/* --------------       footer    -------------------*/
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #232429;
+}
+
+footer h1 {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 54px;
+  background: -webkit-linear-gradient(#C31432, #240B36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 21px;
+}
+
+footer p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 64px;
+}
+
+footer p.copy {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 16px;
+  margin-top: 64px;
+}
+
+.icon-list {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-items {
+  list-style: none;
+}
+
+.icon-link {
+  display: flex;
+  font-size: 2.6rem;
+  text-decoration: none;
+  color: #b6bbc5;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 30%;
+  box-shadow:  4px 4px 10px #1e1f23,
+             -4px -4px 10px #28292f;
+  transition: 0.5s;
+}
+
+.icon-link i {
+  margin: auto;
+}
+
+.icon-link:hover {
+  transform: scale(.96);
+  background: -webkit-linear-gradient(#C31432, #240B36);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+  box-shadow: inset 4px 4px 10px #1e1f23,
+              inset -4px -4px 10px #28292f;
+}
+
+
+/* --------------    END of footer    -------------------*/
+
+
+
+
+/* ------------------ PROJECT.HTML -------------------- */
+
+img.mockup_2 {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* project showcase */
+
+#project {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-top: 0px;
+  width: 65%;
+  height: auto;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #c8d3dd, #eefaff);
+  box-shadow:  10px 10px 30px #bdc7d1,
+              -10px -10px 30px #ffffff;
+  padding: 80px 104px 80px 104px;
+  transition: 0.5s;
+}
+
+#project:hover {
+  transform: scale(0.98);
+}
+
+
+#project .container {
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+#project h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+
+#project p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Source Sans Pro", serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #252627;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+#project:hover {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #eefaff, #c8d3dd);
+  box-shadow: inset 10px 10px 30px #bdc7d1,
+            inset -10px -10px 30px #ffffff;
+}
+
+/* BUTTON */
+
+#project a.btn_1 {
+  position: relative;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-top: 88px;
+  margin-bottom: 8px;
+
+  border-radius: 50px;
+  background: #DEEAF6;
+  box-shadow:  4px 4px 10px #bdc7d1,
+             -4px -4px 10px #ffffff;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+#project a.btn_1:hover {
+  transform: scale(.98);
+  font-weight: bold;
+  border-radius: 50px;
+  color: #fff;
+  background-image: linear-gradient(to right, #C31432 , #240B36);
+}
+
+.btn_1:hover span {
+  transform: scale(2);
+  font-weight: bold;
+}
+
+/* -----------  Main 2 -------------- */
+
+#main2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 48px;
+}
+
+#main2 h1 {
+  font-family: "Montserrat" sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#main2 h3 {
+  font-family: "Montserrat" sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+#main2 p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+p.Roles {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+/* ---------------- SECTION BACKGROUND COLOR ------------- */
+
+section.center, .left, .center2, .subtext, .conclusion {
+  background-color: #F1F3F6;
+  width: 100%;
+}
+
+section.center3 {
+  background-color: #DEEAF6;
+}
+
+/* ---------------- The Overview ------------- */
+
+.center h2, h1, p {
+  text-align: center;
+  justify-content: center;
+}
+
+.center h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin-top: 104px;
+  margin-bottom: 8px;
+}
+
+.center h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.center p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin-top: 0px;
+  margin-bottom: 120px;
+  line-height: 1.8;
+  color: #252627;
+}
+
+/* ---------------- The Problem & Solution ------------- */
+
+
+.left h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 114px;
+
+}
+
+.left h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 32px 114px 24px 114px;
+  text-align: left;
+  line-height: 1.7;
+  color: #000;
+}
+
+.left p {
+  text-align: left;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 0px 114px 80px 114px;
+  line-height: 1.7;
+  color: #252627;
+}
+
+/* ---------------------  BODY -------- */
+
+.center2 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 80px;
+  margin-bottom: 32px;
+}
+
+.center2 h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 1.7;
+  color: #000;
+}
+
+.center2 p, .subtext p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 8px 114px 32px 114px;
+  line-height: 1.8;
+  color: #252627;
+}
+
+/* --------------------- images ------------- */
+
+img.surveys, .stories, .wireframes, .branding {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+img.companylogo, .personas, .flow, .sketches, .moodboard, .logoprocess, .test1, .test2,
+    .test3, .usertesting2, .mockups {
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+
+img.test2, .test3, .usertesting2, .mockups{
+  margin-top: 88px;
+}
+
+img.usertesting2, .mockups {
+  margin-bottom: 80px;
+}
+
+/* --------------------- END------------- */
+
+
+.subtext p {
+  margin-top: 32px;
+  margin-bottom: 0px;
+}
+
+/* ------ re-usable code for only h2 & p ------------- */
+
+#use p#result  {
+  margin-top: 56px;
+  font-weight: bold;
+}
+
+#use p#left {
+  text-align: left;
+}
+
+#use p.bold {
+  font-weight: bold;
+}
+
+#use h1 {
+ margin-top: 120px;
+}
+
+#use h2 {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+#use p {
+  margin-top: 8px;
+  margin-bottom: 48px;
+}
+
+#use2 h2 {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+#use h2.special {
+  margin-top: 120px;
+  margin-bottom: 16px;
+}
+
+/* ------------------------- END ------------- */
+
+.center3 h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 1.7;
+  color: #000;
+}
+
+.center3 p{
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 8px 114px 32px 114px;
+  line-height: 1.8;
+  color: #252627;
+}
+
+#use .container {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+/* BUTTON */
+
+#use a.btn_1 {
+  position: relative;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 56px;
+
+  border-radius: 50px;
+  background: #DEEAF6;
+  box-shadow:  4px 4px 10px #bdc7d1,
+             -4px -4px 10px #ffffff;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+#use a.btn_1:hover {
+  transform: scale(.98);
+  font-weight: bold;
+  border-radius: 50px;
+  color: #fff;
+  background-image: linear-gradient(to right, #C31432 , #240B36);
+}
+
+.btn_1:hover span {
+  transform: scale(2);
+  font-weight: bold;
+}
+
+
+
+/* --------- CONCLUSION ----------- */
+
+#use2.conclusion h2 {
+  font-family: "Source Sans Pro", "sans-serif";
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.conclusion h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 80px;
+  margin-bottom: 32px;
+}
+
+.conclusion h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 1.7;
+  color: #000;
+}
+
+.conclusion p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 8px 114px 16px 114px;
+  line-height: 1.8;
+  color: #252627;
+}
+
+.conclusion p.quote {
+  font-family: "LibreBaskerville", "serif";
+  font-size: 26px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   Helper classes (optional)
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
