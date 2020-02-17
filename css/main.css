@@ -618,7 +618,7 @@ footer p.copy {
   margin: auto;
 }
 
-.icon-link:hover, .icon-links:active {
+.icon-link:hover, .icon-links:focus {
   background: -webkit-linear-gradient(#C31432, #240B36);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
@@ -638,7 +638,7 @@ footer p.copy {
     width: 5rem;
   }
 
- .icon-link:hover {
+ .icon-link:focus {
   background: -webkit-linear-gradient(#C31432, #240B36);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
