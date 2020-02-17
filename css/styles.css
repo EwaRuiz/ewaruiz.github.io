@@ -22,14 +22,18 @@ body {
   width: 85%;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .container {
+    max-width: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   .container {
     max-width: 0 auto;
   }
-
-
-
 }
 
 
@@ -106,7 +110,7 @@ header nav {
 
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
 
   header {
     background: #DEEAF6;
@@ -262,6 +266,26 @@ section {
   grid-gap: 3rem;
 }
 
+@media only screen and (max-width: 768px) {
+
+  section#main_0 {
+    display: block;
+  }
+
+  #main_0 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    margin-bottom: 120px;
+  }
+
+  img.user {
+    padding-top: 32px;
+    float: left;
+  }
+}
+
+
 @media only screen and (max-width: 375px) {
 
   section#main_0 {
@@ -300,6 +324,13 @@ section {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+
+  #main_0 h1 {
+    font-size: 34px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   #main_0 h1 {
@@ -316,6 +347,14 @@ section {
   margin-right: 0px;
   text-align: left;
   width: 550px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #main_0 p {
+    font-size: 20px;
+    width: 319px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -375,6 +414,15 @@ section {
     width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+
+  #main_1 h1 {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   #main_1 h1 {
@@ -397,6 +445,17 @@ section {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+
+  #main_1 h2 {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   #main_1 h2 {
@@ -405,7 +464,6 @@ section {
     margin-bottom: 24px;
     text-align: left;
   }
-
 }
 
 #main_1 p {
@@ -419,7 +477,19 @@ section {
   margin-top: 0px;
   margin-bottom: 48px;
   text-align: left;
-  width: 85%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #main_1 p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    text-align: left;
+    width: auto;
+    line-height: 1.7;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -449,14 +519,22 @@ section {
   width: 100%;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
+  #main_1 p.quote {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    text-align: center;
+    width: 100%;
+  }
+}
 
+@media only screen and (max-width: 375px) {
   #main_1 p.quote {
     font-size: 18px;
     margin-top: 0px;
     margin-bottom: 32px;
   }
-
 }
 
 
@@ -494,7 +572,7 @@ footer h1 {
   margin-bottom: 21px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
 
   footer h1 {
     font-size: 35px;
@@ -509,6 +587,15 @@ footer p {
   font-size: 24px;
   margin-bottom: 64px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  footer p {
+    font-size: 18px;
+    margin-bottom: 56px;
+  }
+}
+
 
 @media only screen and (max-width: 375px) {
 
@@ -575,6 +662,28 @@ footer p.copy {
   transform: scale(.96);
 }
 
+@media only screen and (max-width: 768px) {
+
+  .icon-link  {
+
+    display: flex;
+    font-size: 2.0rem;
+    height: 5rem;
+    text-decoration: none;
+    transition: 0.5s;
+    width: 5rem;
+  }
+
+ .icon-link:focus {
+  background: -webkit-linear-gradient(#C31432, #240B36);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+  box-shadow: inset 4px 4px 10px #1e1f23,
+              inset -4px -4px 10px #28292f;
+  transform: scale(.96);
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   .icon-link {
@@ -631,6 +740,32 @@ img.mockup_2 {
   width: 65%;
 }
 
+@media only screen and (max-width: 768px) {
+
+  #project {
+    box-shadow:  inset 10px 10px 30px #bdc7d1,
+              inset -10px -10px 30px #ffffff;
+    margin-bottom: 40px;
+    padding: 20px 40px 20px 40px;
+    text-align: center;
+    width: 70%;
+  }
+
+    img.mockup_1 {
+      visibility: hidden;
+      display: none;
+    }
+
+    img.mockup_copy {
+      visibility: visible;
+      display: inline;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 24px;
+      min-width: 100%;
+    }
+}
+
 @media only screen and (max-width: 375px) {
 
   #project {
@@ -674,6 +809,16 @@ img.mockup_2 {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+
+  #project .container {
+    align-items: center;
+    display: inline;
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   #project .container {
@@ -682,7 +827,6 @@ img.mockup_2 {
     justify-content: center;
     margin-top: 15px;
   }
-
 }
 
 #project h1 {
@@ -709,6 +853,24 @@ img.mockup_2 {
   margin-top: 24px;
   margin-bottom: 40px;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #project h1 {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-left: 0px;
+  }
+
+  #project p {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -774,6 +936,16 @@ img.mockup_2 {
   transform: scale(2);
 }
 
+@media only screen and (max-width: 768px) {
+
+  #project a.btn_1  {
+    font-size: 14px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   #project a.btn_1  {
@@ -795,6 +967,7 @@ img.mockup_2 {
   text-align: center;
 }
 
+
 @media only screen and (max-width: 375px) {
 
   #main2 {
@@ -807,6 +980,15 @@ img.mockup_2 {
   font-family: "Montserrat" sans-serif;
   font-weight: 700;
   font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #main2 h1 {
+    font-size: 18px;
+    margin-top: 56px;
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -823,6 +1005,15 @@ img.mockup_2 {
   font-weight: bold;
   font-size: 21px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #main2 h3 {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -842,6 +1033,15 @@ img.mockup_2 {
   line-height: 1.7;
 }
 
+@media only screen and (max-width: 768px) {
+
+  #main2 p {
+    display: block;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   #main2 p {
@@ -854,6 +1054,14 @@ img.mockup_2 {
 p.Roles {
   margin-top: 0;
   margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+
+ #main2 p.Roles {
+    font-size: 18px;
+    margin-top: 8px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -891,6 +1099,15 @@ section.center3 {
   margin-bottom: 8px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .center h2 {
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   .center h2 {
@@ -906,6 +1123,15 @@ section.center3 {
   font-size: 32px;
   margin-top: 0px;
   margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .center h1 {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -927,6 +1153,16 @@ section.center3 {
   margin-top: 0px;
   margin-bottom: 120px;
   width: 850px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .center p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -951,6 +1187,17 @@ section.center3 {
   text-align: left;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .left h1 {
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   .left h1 {
@@ -970,6 +1217,19 @@ section.center3 {
   line-height: 1.7;
   margin: 32px 114px 24px 114px;
   text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .left h2 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: left;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -993,6 +1253,19 @@ section.center3 {
   line-height: 1.7;
   margin: 0px 114px 80px 114px;
   text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .left p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: left;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1020,6 +1293,15 @@ section.center3 {
   margin-bottom: 32px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .center2 h1 {
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 24px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   .center2 h1 {
@@ -1040,6 +1322,15 @@ section.center3 {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .center2 h2 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   .center2 h2 {
@@ -1056,6 +1347,16 @@ section.center3 {
   font-size: 21px;
   line-height: 1.8;
   margin: 8px 114px 32px 114px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .center2 p, .subtext p {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1083,10 +1384,15 @@ img.surveys2, img.personas2, img.usertesting2mobile, img.stories2, img.branding2
   display: none;
 }
 
-#use p.process {
+.use p.process {
   visibility: hidden;
   display: none;
 }
+
+@media only screen and (max-width: 768px) {
+
+}
+
 
 @media only screen and (max-width: 375px) {
 
@@ -1129,7 +1435,7 @@ img.surveys2, img.personas2, img.usertesting2mobile, img.stories2, img.branding2
     min-width: 100%;
   }
 
-  #use p.process {
+  .use p.process {
     visibility: visible;
     display: block;
     margin-top: 32px;
@@ -1143,6 +1449,12 @@ img.companylogo, .personas, .flow, .sketches, .moodboard, .logoprocess, .test1, 
   margin: 0 auto;
   margin-bottom: 0px;
   max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  img.companylogo {
+    margin-top: 48px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1172,14 +1484,23 @@ img.usertesting2, .mockups {
 
 /* ------ re-usable code for only h2 & p ------------- */
 
-#use p#result  {
+.use p#result  {
   font-weight: bold;
   margin-top: 56px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .use p#result {
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
-  #use p#result {
+  .use p#result {
     font-size: 14px;
     margin-top: 32px;
     margin-bottom: 0px;
@@ -1188,17 +1509,27 @@ img.usertesting2, .mockups {
 }
 
 
-#use p#left {
+.use p#left {
   text-align: left;
 }
 
-#use p.bold {
+.use p.bold {
   font-weight: bold;
 }
 
 @media only screen and (max-width: 375px) {
 
-  #use p.bold {
+  .use p.bold {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .use p.bold {
     font-size: 14px;
     margin-top: 0px;
     margin-bottom: 32px;
@@ -1207,40 +1538,40 @@ img.usertesting2, .mockups {
   }
 }
 
-#use h1 {
+.use h1 {
   margin-top: 120px;
 }
 
 @media only screen and (max-width: 375px) {
-  #use h1 {
+  .use h1 {
     font-size: 24px;
     margin-top: 64px;
     margin-bottom: 0px;
   }
 }
 
-#use h2 {
+.use h2 {
   margin-top: 80px;
   margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 375px) {
 
-  #use h2 {
+  .use h2 {
     font-size: 18px;
     margin-top: 80px;
     margin-bottom: 8px;
   }
 }
 
-#use p {
+.use p {
   margin-top: 8px;
   margin-bottom: 48px;
 }
 
 @media only screen and (max-width: 375px) {
 
-  #use p {
+  .use p {
     font-size: 16px;
     width: 300px;
     margin: 0 auto;
@@ -1248,19 +1579,19 @@ img.usertesting2, .mockups {
   }
 }
 
-#use2 h2 {
+.use2 h2 {
   margin-top: 0px;
   margin-bottom: 32px;
 }
 
-#use h2.special {
+.use h2.special {
   margin-top: 120px;
   margin-bottom: 16px;
 }
 
 @media only screen and (max-width: 375px) {
 
-  #use h2.special {
+  .use h2.special {
     font-size: 18px;
     margin-top: 80px;
     margin-bottom: 16px;
@@ -1289,9 +1620,18 @@ img.usertesting2, .mockups {
   margin: 8px 114px 32px 114px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .use.center3 p {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
-  #use.center3 p {
+  .use.center3 p {
     font-size: 16px;
     width: 292px;
     margin: 0 auto;
@@ -1299,7 +1639,7 @@ img.usertesting2, .mockups {
   }
 }
 
-#use .container {
+.use .container {
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -1308,7 +1648,7 @@ img.usertesting2, .mockups {
 
 /* BUTTON */
 
-#use a.btn_1 {
+.use a.btn_1 {
   align-items: center;
   color: #000;
   border-radius: 50px;
@@ -1329,7 +1669,7 @@ img.usertesting2, .mockups {
   text-transform: uppercase;
 }
 
-#use a.btn_1:hover {
+.use a.btn_1:hover {
   color: #fff;
   border-radius: 50px;
   background-image: linear-gradient(to right, #C31432 , #240B36);
@@ -1344,7 +1684,7 @@ img.usertesting2, .mockups {
 
 @media only screen and (max-width: 375px) {
 
-  #use a.btn_1  {
+  .use a.btn_1  {
     font-size: 14px;
     margin-top: 0px;
     margin-bottom: 40px;
@@ -1355,7 +1695,7 @@ img.usertesting2, .mockups {
 /* --------- CONCLUSION ----------- */
 
 
-#use2.conclusion h2 {
+.use2.conclusion h2 {
   font-family: "Source Sans Pro", "sans-serif";
   font-size: 21px;
   font-weight: 600;
@@ -1368,6 +1708,15 @@ img.usertesting2, .mockups {
   font-size: 32px;
   margin-top: 80px;
   margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .conclusion h1 {
+    font-size: 24px;
+    margin-top: 56px;
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1390,9 +1739,18 @@ img.usertesting2, .mockups {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .use2.conclusion h2 {
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
-  #use2.conclusion h2 {
+  .use2.conclusion h2 {
     font-size: 16px;
     margin-top: 32px;
     margin-bottom: 0px;
@@ -1408,9 +1766,20 @@ img.usertesting2, .mockups {
   margin: 8px 114px 16px 114px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .use2.conclusion p {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
-  #use2.conclusion p {
+  .use2.conclusion p {
     font-size: 16px;
     margin: 0 auto;
     margin-top: 16px;
@@ -1430,9 +1799,20 @@ img.usertesting2, .mockups {
   margin-top: 40px;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
 
-  #use2.conclusion p.quote {
+  .use2.conclusion p.quote {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .use2.conclusion p.quote {
     font-size: 16px;
     margin: 0 auto;
     margin-top: 40px;
