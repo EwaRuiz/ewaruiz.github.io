@@ -638,8 +638,7 @@ footer p.copy {
     width: 5rem;
   }
 
-
-.icon-link:active {
+ a.icon-link:hover {
   background: -webkit-linear-gradient(#C31432, #240B36);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
