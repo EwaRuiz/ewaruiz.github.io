@@ -629,7 +629,7 @@ footer p.copy {
 
 @media only screen and (max-width: 375px) {
 
-  .icon-link {
+  .icon-link  {
     display: flex;
     font-size: 2.0rem;
     height: 5rem;
@@ -639,8 +639,7 @@ footer p.copy {
   }
 
 
-
-.icon-link:hover, .icon-link:active {
+.icon-link:active {
   background: -webkit-linear-gradient(#C31432, #240B36);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
@@ -648,6 +647,7 @@ footer p.copy {
               inset -4px -4px 10px #28292f;
   transform: scale(.96);
   }
+
 }
 
 
