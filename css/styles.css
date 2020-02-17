@@ -1379,7 +1379,13 @@ img.surveys, .stories, .wireframes, .branding {
   max-width: 100%;
 }
 
-img.surveys2, img.personas2, img.usertesting2mobile, img.stories2, img.branding2, img.logoprocess2, img.logoprocess3, img.test1mobile, img.test2mobile, img.test3mobile {
+@media only screen and (max-width: 768px) {
+  img.stories {
+    max-width: 150%:
+  }
+}
+
+img.surveys2, img.usertesting2mobile, img.stories2, img.branding2, img.logoprocess2, img.logoprocess3, img.test1mobile, img.test2mobile, img.test3mobile {
   visibility: hidden;
   display: none;
 }
@@ -1389,14 +1395,11 @@ img.surveys2, img.personas2, img.usertesting2mobile, img.stories2, img.branding2
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-
-}
 
 
 @media only screen and (max-width: 375px) {
 
-  img.surveys, img.personas, img.stories, img.branding, img.logoprocess, img.test1, img.test2, img.test3, img.usertesting2 {
+  img.surveys, img.stories, img.branding, img.logoprocess, img.test1, img.test2, img.test3, img.usertesting2 {
     visibility: hidden;
     display: none;
   }
@@ -1407,12 +1410,7 @@ img.surveys2, img.personas2, img.usertesting2mobile, img.stories2, img.branding2
     min-width: 100%;
   }
 
-  img.personas2 {
-    visibility: visible;
-    display: block;
-  }
-
-  img.personas2, img.test1mobile, img.test2mobile, img.test3mobile, img.logoprocess3 {
+  img.test1mobile, img.test2mobile, img.test3mobile, img.logoprocess3 {
     margin: 0 auto;
     margin-top: 64px;
   }
@@ -1442,7 +1440,7 @@ img.surveys2, img.personas2, img.usertesting2mobile, img.stories2, img.branding2
   }
 }
 
-img.companylogo, .personas, .flow, .sketches, .moodboard, .logoprocess, .test1, .test2,
+img.companylogo, .flow, .sketches, .moodboard, .logoprocess, .test1, .test2,
     .test3, .usertesting2, .mockups {
   align-items: center;
   display: block;
@@ -1454,7 +1452,9 @@ img.companylogo, .personas, .flow, .sketches, .moodboard, .logoprocess, .test1, 
 @media only screen and (max-width: 768px) {
   img.companylogo {
     margin-top: 48px;
+    width: 50%;
   }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -1482,7 +1482,146 @@ img.usertesting2, .mockups {
   margin-bottom: 0px;
 }
 
-/* ------ re-usable code for only h2 & p ------------- */
+/* PERSONAS GRID */
+
+#personas .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #personas .container {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  #personas .container {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+#personas h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #personas h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+#personastitle h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 88px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #personastitle h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 120px;
+    margin-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #personastitle h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 32px;
+  }
+}
+
+#personas h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #personas h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+#personas p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  margin-top: 8px;
+  line-height: 1.7;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #personas p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+#personas p.quote {
+  font-family: "LibreBaskerville", serif;
+  font-weight: 400;
+  font-size: 21px;
+  font-style: italic;
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #personas p.quote {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  img.personaimage1, img.personaimage2 {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  img.personaimage1, img.personaimage2 {
+    width: 40%;
+  }
+}
+
+/* ------ re-usable code for only use & p ------------- */
 
 .use p#result  {
   font-weight: bold;
