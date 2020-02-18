@@ -27,6 +27,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 414px) {
+  .container {
+    max-width: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .container {
     max-width: 0 auto;
@@ -126,11 +132,11 @@ header a:hover {
 
   header li {
     float: none;
-    padding: 0 0 0 0px;
     margin-top: none;
-    text-align: right;
     margin-right: 0px;
+    padding: 0 0 0 0px;
     transition: 0.5s;
+    text-align: right;
   }
 
   .nav li:hover {
@@ -144,21 +150,21 @@ header a:hover {
   }
 
   #menu{
-  	width: 35px;
+    cursor: pointer;
+    float: right;
   	height: 30px;
   	margin: 32px 20px 0 20px;
-  	cursor: pointer;
-    float: right;
     margin-bottom: 32px;
+    width: 35px;
   }
   .bar{
+    background-color: #C31432;
+    border-radius: 5px;
+    display: block;
   	height: 5px;
-  	width: 100%;
-  	background-color: #C31432;
-  	display: block;
-  	border-radius: 5px;
-
+    width: 100%;
   }
+
   #bar1{
   	transform: translateY(-4px);
   }
@@ -270,6 +276,25 @@ img.logo {
   }
 }
 
+@media only screen and (max-width: 414px) {
+
+  section#showcase {
+    display: inline-block;
+  }
+
+  #showcase .container {
+    display: block;
+    grid-template-columns: none;
+    grid-gap: none;
+  }
+
+  img.hero {
+    padding-top: 32px;
+    width: 250px;
+    height: 250px;
+    float: left;
+  }
+}
 
 @media only screen and (max-width: 375px) {
 
@@ -314,6 +339,11 @@ img.logo {
   }
 }
 
+@media only screen and (max-width: 414px) {
+  #showcase h1 {
+    font-size: 34px;
+  }
+}
 
 @media only screen and (max-width: 375px) {
   #showcase h1 {
@@ -332,6 +362,12 @@ img.logo {
 }
 
 @media only screen and (max-width: 768px) {
+  #showcase p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
   #showcase p {
     font-size: 22px;
   }
@@ -360,6 +396,13 @@ img.logo {
 }
 
 @media only screen and (max-width: 768px) {
+  #article_1 h1 {
+    font-size: 24px;
+    margin: 72px 0px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
   #article_1 h1 {
     font-size: 24px;
     margin: 72px 0px;
@@ -425,6 +468,31 @@ img.mockup_copy {
 
 }
 
+@media only screen and (max-width: 414px) {
+
+  #article_2 {
+    box-shadow:  inset 10px 10px 30px #bdc7d1,
+              inset -10px -10px 30px #ffffff;
+    margin-bottom: 40px;
+    padding: 20px 40px 20px 40px;
+    text-align: center;
+    width: 70%;
+  }
+
+    img.mockup_1 {
+      visibility: hidden;
+      display: none;
+    }
+
+    img.mockup_copy {
+      visibility: visible;
+      display: inline;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 24px;
+    }
+}
+
 @media only screen and (max-width: 375px) {
 
   #article_2 {
@@ -476,6 +544,16 @@ img.mockup_copy {
   }
 }
 
+@media only screen and (max-width: 414px) {
+
+  #article_2 .container {
+    align-items: center;
+    display: inline;
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   #article_2 .container {
@@ -521,6 +599,24 @@ img.mockup_copy {
     font-weight: 400;
     margin-bottom: 25px;
     margin-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+
+  #article_2 h1 {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-left: 0px;
+  }
+
+  #article_2 p {
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+    margin-left: 0px;
   }
 }
 
@@ -598,6 +694,16 @@ img.mockup_copy {
   }
 }
 
+@media only screen and (max-width: 414px) {
+
+  #article_2 a.btn_1  {
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-left: 0px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   #article_2 a.btn_1  {
@@ -662,6 +768,14 @@ footer p {
   }
 }
 
+@media only screen and (max-width: 414px) {
+
+  footer p {
+    font-size: 16px;
+    margin-bottom: 56px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
 
   footer p {
@@ -677,6 +791,14 @@ footer p.copy {
   font-size: 14px;
   margin-bottom: 16px;
   margin-top: 64px;
+}
+
+@media only screen and (max-width: 414px) {
+
+  footer p.copy {
+    font-size: 12px;
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -729,6 +851,28 @@ footer p.copy {
 
 
 @media only screen and (max-width: 768px) {
+
+  .icon-link  {
+
+    display: flex;
+    font-size: 2.0rem;
+    height: 5rem;
+    text-decoration: none;
+    transition: 0.5s;
+    width: 5rem;
+  }
+
+ .icon-link:focus {
+  background: -webkit-linear-gradient(#C31432, #240B36);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+  box-shadow: inset 4px 4px 10px #1e1f23,
+              inset -4px -4px 10px #28292f;
+  transform: scale(.96);
+  }
+}
+
+@media only screen and (max-width: 414px) {
 
   .icon-link  {
 
