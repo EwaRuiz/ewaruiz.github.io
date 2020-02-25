@@ -22,6 +22,15 @@ body {
   width: 85%;
 }
 
+@media only screen and (max-width: 1901px) {
+
+  .container {
+    margin: 0 auto;
+  }
+
+}
+
+
 @media only screen and (max-width: 768px) {
 
   .container {
@@ -165,7 +174,7 @@ header nav {
   #menu{
   	width: 35px;
   	height: 30px;
-  	margin: 32px 20px 0 20px;
+  	margin: 52px 20px 0 20px;
   	cursor: pointer;
     float: right;
     margin-bottom: 32px;
@@ -303,6 +312,7 @@ section {
     display: block;
     grid-template-columns: none;
     grid-gap: none;
+    margin-bottom: 0px;
   }
 
   img.user {
@@ -539,7 +549,14 @@ section {
   margin-top: 0px;
   margin-bottom: 48px;
   text-align: left;
-  width: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1900px) {
+
+  #main_1 p {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -549,7 +566,7 @@ section {
     margin-top: 0px;
     margin-bottom: 32px;
     text-align: left;
-    width: auto;
+    max-width: 100%;
     line-height: 1.7;
   }
 }
@@ -645,7 +662,7 @@ footer {
 }
 
 footer h1 {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", serif;
@@ -751,7 +768,7 @@ footer p.copy {
 }
 
 .icon-link:hover {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
   box-shadow: inset 4px 4px 10px #1e1f23,
@@ -772,7 +789,7 @@ footer p.copy {
   }
 
  .icon-link:focus {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
   box-shadow: inset 4px 4px 10px #1e1f23,
@@ -795,7 +812,7 @@ footer p.copy {
 
 
 .icon-link:hover, .icon-link:active {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
   box-shadow: inset 4px 4px 10px #1e1f23,
@@ -818,7 +835,7 @@ footer p.copy {
 
 
 .icon-link:hover, .icon-link:active {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
   box-shadow: inset 4px 4px 10px #1e1f23,
@@ -1705,7 +1722,7 @@ img.surveys, .stories, .wireframes, .branding {
   }
 }
 
-img.surveys2, img.usertesting2mobile, img.stories2, img.branding2, img.logoprocess2, img.logoprocess3, img.test1mobile, img.test2mobile, img.test3mobile {
+img.surveys2, img.sketches2, img.wireframes2, img.mockups2, img.surveys3, img.stories3, img.usertesting2mobile, img.stories2, img.branding2, img.logoprocess2, img.logoprocess3, img.test1mobile, img.test2mobile, img.test3mobile {
   visibility: hidden;
   display: none;
 }
@@ -1719,15 +1736,21 @@ img.surveys2, img.usertesting2mobile, img.stories2, img.branding2, img.logoproce
 
 @media only screen and (max-width: 414px) {
 
-  img.surveys, img.stories, img.branding, img.logoprocess, img.test1, img.test2, img.test3, img.usertesting2 {
+  img.surveys, img.sketches, img.wireframes, img.mockups, img.stories, img.branding, img.logoprocess, img.test1, img.test2, img.test3, img.usertesting2 {
     visibility: hidden;
     display: none;
   }
 
-  img.surveys2, img.stories2, img.branding2, img.logoprocess2, img.logoprocess3, img.test1mobile, img.test2mobile, img.test3mobile, img.usertesting2mobile {
+  img.surveys2, img.sketches2, img.wireframes2, img.mockups2, img.stories2, img.branding2, img.logoprocess2, img.logoprocess3, img.test1mobile, img.test2mobile, img.test3mobile, img.usertesting2mobile {
     visibility: visible;
     display: block;
     min-width: 100%;
+  }
+
+  img.mockups2 {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    max-width: 100%;
   }
 
   img.test1mobile, img.test2mobile, img.test3mobile, img.logoprocess3 {
@@ -1769,6 +1792,28 @@ img.companylogo, .flow, .sketches, .moodboard, .logoprocess, .test1, .test2,
   max-width: 100%;
 }
 
+
+@media only screen and (max-width: 1901px) {
+  img.surveys, .stories {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  img.surveys, .stories {
+    width: 100%;
+    object-position: left;
+    visibility: hidden;
+    display: none;
+  }
+
+  img.surveys3, img.stories3 {
+    visibility: visible;
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   img.companylogo {
     margin-top: 48px;
@@ -1780,6 +1825,11 @@ img.companylogo, .flow, .sketches, .moodboard, .logoprocess, .test1, .test2,
   img.companylogo {
     margin-top: 48px;
     min-width: 100%;
+  }
+
+  img.surveys3, img.stories3 {
+    visibility: hidden;
+    display: none;
   }
 }
 
@@ -1816,6 +1866,15 @@ img.usertesting2, .mockups {
   grid-gap: 3rem;
   text-align: center;
   max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #personas .container {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1922,6 +1981,7 @@ img.usertesting2, .mockups {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    width: 85%;
   }
 }
 

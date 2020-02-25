@@ -153,7 +153,7 @@ header a:hover {
     cursor: pointer;
     float: right;
   	height: 30px;
-  	margin: 32px 20px 0 20px;
+  	margin: 52px 20px 0 20px;
     margin-bottom: 32px;
     width: 35px;
   }
@@ -735,7 +735,7 @@ footer {
 }
 
 footer h1 {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", serif;
@@ -841,7 +841,7 @@ footer p.copy {
 }
 
 .icon-link:hover, .icon-links:focus {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
   box-shadow: inset 4px 4px 10px #1e1f23,
@@ -863,7 +863,7 @@ footer p.copy {
   }
 
  .icon-link:focus {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
   box-shadow: inset 4px 4px 10px #1e1f23,
@@ -885,7 +885,7 @@ footer p.copy {
   }
 
  .icon-link:focus {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
   box-shadow: inset 4px 4px 10px #1e1f23,
@@ -907,7 +907,7 @@ footer p.copy {
   }
 
  .icon-link:focus {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
   box-shadow: inset 4px 4px 10px #1e1f23,
