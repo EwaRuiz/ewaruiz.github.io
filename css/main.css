@@ -1059,19 +1059,6 @@ footer p.copy {
   }
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
-
-#progressbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 15px;
-  height: 100%;
-  border-radius: 10px;
-  background: linear-gradient(to top, #C31432, #240B36, #C31432);
-}
 
 
 /* ==========================================================================
