@@ -46,12 +46,29 @@ ul {
 }
 
 
+/* ---------- CONTACT.HTML ---------- */
+
+.contact {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 414px) {
+
+  .contact {
+    display: hidden;
+    visibility: hidden;
+  }
+}
+
 /* ---------- INDEX.HTML ---------- */
 
 
 /* Header */
 
 header {
+
   background: #DEEAF6;
   box-sizing: border-box;
   min-height: 70px;
@@ -72,7 +89,6 @@ header li {
   float: left;
   padding: 0 30px 0 30px;
   transition: 0.5s;
-
 }
 
 header #branding {
@@ -91,7 +107,7 @@ header nav {
 }
 
 header a:hover {
-  background: -webkit-linear-gradient(#C31432, #240B36);
+  background: -webkit-linear-gradient(#C31432, #C31432);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -359,6 +375,7 @@ img.logo {
   font-weight: 400;
   margin-right: 0px;
   width: auto;
+  line-height: 39px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -379,8 +396,46 @@ img.logo {
   }
 }
 
+#showcase p.hero_subtitle {
+  line-height: 39px;
+  width: 550px;
+}
 
+@media only screen and (max-width: 1024px) {
+  #showcase p.hero_subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 450px;
+    width: auto;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  #showcase p.hero_subtitle {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 370px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #showcase p.hero_subtitle {
+    font-size: 18px;
+    line-height: 29px;
+    max-width: 370px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #showcase p.hero_subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 350px;
+    width: auto;
+  }
+}
 /* article_1 */
 
 #article_1 h1 {
@@ -418,7 +473,6 @@ img.logo {
 
 
 /* section */
-
 
 
 /* article_2 */
@@ -584,6 +638,52 @@ img.mockup_copy {
   margin-left: 8px;
 }
 
+@media only screen and (max-width: 1901px) {
+
+
+  #article_2 p {
+    font-size: 20px;
+    margin-top: 8px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    width: 400px;
+    margin-bottom: 32px;
+    margin-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+
+  #article_2 p {
+    font-size: 20px;
+    margin-top: 8px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #article_2 h1 {
+    font-size: 23px;
+    margin-top: 32px;
+    margin-left: 8px;
+  }
+
+  #article_2 p {
+    font-size: 16px;
+    margin-top: 8px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-left: 8px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
   #article_2 h1 {
@@ -720,6 +820,48 @@ section #main .container {
 }
 
 /* footer */
+
+/* form  --
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-family: "Source Sans Pro"
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background-color: #C31432;
+  border-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Montserrat"
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: #B2132E;
+  cursor: pointer;
+}
+*/
+
 footer {
   align-items: center;
   background-color: #232429;
@@ -813,9 +955,10 @@ footer p.copy {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  max-width: 480px;
   padding: 0px;
   text-align: center;
+  margin: auto;
+  margin-top: 0px;
   width: 100%;
 }
 
@@ -916,6 +1059,19 @@ footer p.copy {
   }
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to top, #C31432, #240B36, #C31432);
+}
 
 
 /* ==========================================================================

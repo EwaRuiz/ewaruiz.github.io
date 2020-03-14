@@ -17,6 +17,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
+    <div id="progressbar"></div>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -32,7 +33,7 @@
           <ul class="links">
             <li class="current"><a href="#article_1">case studies</a></li>
             <li class="about"><a href="about.html">about</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="contact.html">contact</a></li>
           </ul>
 
           <div id="menu-bar">
@@ -57,8 +58,8 @@
         <div class="container">
           <div>
             <h1> Hi Human!<br>It's me, Edward.</h1>
-            <p class="hero_subtitle">I'm a User Experience & Product Designer from Houston, TX. <br>
-            I have a deep passion for understanding how technology <br>
+            <p class="hero_subtitle">I'm a User Experience & Product Designer from Houston, TX.
+            I have a deep passion for understanding how technology
             impacts people’s behavior and influences their habits.</p>
           </div>
           <div>
@@ -97,16 +98,32 @@
       <div class="wrapper">
         <h1>Let’s Connect!</h1>
         <p>Thanks for stopping by! Feel free to get in touch.</p>
+        <!--  Form for Future use
+        <div class="contact-form">
+          <form id="contact-form" action="contact-form-handler.php" method="post">
+            <input name="name" type="text" class="form-control" placeholder="Your Full Name" required><br>
+
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+
+            <input name="Subject" type="text" class="form-control" placeholder="Subject" required><br>
+
+            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+
+            <input type="submit" class="form-control submit" value="SEND MESSAGE" required>
+          </form>
+        </div>
+  --->
+
         <div id="icons">
         <ul class="icon-list">
             <li class="icon-items">
               <a href="https://www.linkedin.com/in/edwardgruiz/" target="_blank" class="icon-link"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
             </li>
             <li class="icon-items">
-              <a href="mailto:edward.g.ruiz@gmail.com" target="_blank" class="icon-link"><i class="far fa-envelope"></i></a>
+              <a href="https://www.instagram.com/ewa.dsgnr/" target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>
             </li>
             <li class="icon-items">
-              <a href="https://dribbble.com/ewa_senpai" target="_blank" class="icon-link"><i class="fab fa-dribbble"></i></a>
+              <a href="https://twitter.com/ewaruiz_dsgnr" target="_blank" class="icon-link"><i class="fab fa-twitter"></i></a>
             </li>
         </ul>
         </div>
@@ -115,6 +132,7 @@
     </footer>
 
      <script src="js/main.js"></script>
+     <script src="https://code.jquery.come/jquery-3.4.1.js"></script>
      <script>
          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -133,6 +151,7 @@
 
               gtag('config', 'UA-158694992-1');
       </script>
+
   </body>
 
     <!-- Jquery follwed by your custom javascript. Uncomment jQuery only if needed! -->
