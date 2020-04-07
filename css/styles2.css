@@ -948,6 +948,10 @@ img.mockup_2 {
   max-width: 100%;
 }
 
+img.mockup_3 {
+  height: auto;
+  max-width: 100%;
+}
 
 /* project showcase */
 
