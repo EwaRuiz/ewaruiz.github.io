@@ -1962,7 +1962,7 @@ img.hmockups {
   }
 }
 
-img.surveys2, img.sketches2, img.wireframes2, img.mockups2, img.surveys3, img.stories3, img.usertesting2mobile, img.stories2, img.branding2, img.logoprocess2, img.logoprocess3, img.test1mobile, img.test2mobile, img.test3mobile {
+img.surveys2, img.sketches2, img.mockups2, img.surveys3, img.stories3, img.usertesting2mobile, img.stories2, img.branding2, img.logoprocess2, img.logoprocess3, img.test1mobile, img.test2mobile, img.test3mobile {
   visibility: hidden;
   display: none;
 }
@@ -2394,26 +2394,7 @@ hr.two {
   }
 }
 
-@media only screen and (max-width: 768px) {
 
-  img.personaimage1, img.personaimage2 {
-    width: 30%;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-
-  img.personaimage1, img.personaimage2 {
-    width: 40%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-
-  img.personaimage1, img.personaimage2 {
-    width: 40%;
-  }
-}
 
 /* ------ re-usable code for only use & p ------------- */
 
