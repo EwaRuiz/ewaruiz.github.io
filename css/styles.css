@@ -714,6 +714,21 @@ div#main_1.container {
 
 /* --------------       footer    -------------------*/
 
+.email {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.email:hover {
+  color: #C31432;
+  font-weight: 600;
+  transform: scale(.96);
+}
+
 footer {
   align-items: center;
   background-color: #232429;
@@ -807,9 +822,10 @@ footer p.copy {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  max-width: 480px;
   padding: 0px;
   text-align: center;
+  margin: auto;
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -818,10 +834,10 @@ footer p.copy {
 }
 
 .icon-link {
-  color: #b6bbc5;
   border-radius: 30%;
   box-shadow:  4px 4px 10px #1e1f23,
              -4px -4px 10px #28292f;
+  color: #b6bbc5;
   display: flex;
   font-size: 2.6rem;
   height: 6rem;

@@ -4,7 +4,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #DEEAF6;
+  background-color: #f5f5f5;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -69,7 +69,7 @@ ul {
 
 header {
 
-  background: #DEEAF6;
+  background: #f5f5f5;
   box-sizing: border-box;
   min-height: 70px;
   padding-top: 30px;
@@ -131,7 +131,7 @@ header a:hover {
 @media only screen and (max-width: 768px) {
 
   header {
-    background: #DEEAF6;
+    background: #F5f5f5;
     box-sizing: border-box;
     min-height: 70px;
     padding-top: 30px;
@@ -479,7 +479,8 @@ img.logo {
 
 #article_2 {
   border-radius: 50px;
-  background: linear-gradient(145deg, #c8d3dd, #eefaff);
+  /* background: linear-gradient(145deg, #c8d3dd, #eefaff);  - old color */
+  background-color: #f5f5f5;
   box-shadow:  10px 10px 30px #bdc7d1,
               -10px -10px 30px #ffffff;
   height: auto;
@@ -497,6 +498,17 @@ img.mockup_1 {
   max-width: 100%;
 }
 
+img.mockup_2 {
+  max-width: 110%;
+}
+
+@media only screen and (min-width: 1280px) {
+  img.mockup_1  {
+    margin-left: 40px;
+    padding-top: 80px;
+  }
+}
+
 img.mockup_copy {
   visibility: hidden;
   display: none;
@@ -507,7 +519,8 @@ img.mockup_copy {
 
   #article_2 {
     border-radius: 50px;
-    background: linear-gradient(145deg, #c8d3dd, #eefaff);
+    /* background: linear-gradient(145deg, #c8d3dd, #eefaff);  - old color */
+    background-color: #f5f5f5;
     box-shadow:  10px 10px 30px #bdc7d1,
                 -10px -10px 30px #ffffff;
     height: auto;
@@ -545,6 +558,11 @@ img.mockup_copy {
       margin-top: 8px;
       margin-bottom: 24px;
     }
+
+    img.mockup_2 {
+      visibility: hidden;
+      display: none;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -573,6 +591,7 @@ img.mockup_copy {
 }
 
 #article_2:hover {
+
   transform: scale(0.98);
 }
 
@@ -742,14 +761,15 @@ img.mockup_copy {
 
 #article_2:hover {
   border-radius: 50px;
-  background: linear-gradient(145deg, #eefaff, #c8d3dd);
+  /* background: linear-gradient(145deg, #c8d3dd, #eefaff);  - old color */
+  background-color: #f5f5f5;
   box-shadow: inset 10px 10px 30px #bdc7d1,
             inset -10px -10px 30px #ffffff;
 }
 
 #article_2 a.btn_1 {
   border-radius: 50px;
-  background: #DEEAF6;
+  background: #f5f5f5;
   box-shadow:  4px 4px 10px #bdc7d1,
              -4px -4px 10px #ffffff;
   color: #000;
@@ -958,7 +978,7 @@ footer p.copy {
   padding: 0px;
   text-align: center;
   margin: auto;
-  margin-top: 0px;
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -1003,6 +1023,8 @@ footer p.copy {
     text-decoration: none;
     transition: 0.5s;
     width: 5rem;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
  .icon-link:focus {
@@ -1021,10 +1043,11 @@ footer p.copy {
 
     display: flex;
     font-size: 2.0rem;
-    height: 5rem;
+    height: 4rem;
     text-decoration: none;
     transition: 0.5s;
-    width: 5rem;
+    width: 4rem;
+    margin: auto;
   }
 
  .icon-link:focus {
@@ -1043,10 +1066,11 @@ footer p.copy {
 
     display: flex;
     font-size: 2.0rem;
-    height: 5rem;
+    height: 4rem;
     text-decoration: none;
     transition: 0.5s;
-    width: 5rem;
+    margin: auto;
+    width: 4rem;
   }
 
  .icon-link:focus {
@@ -1059,6 +1083,20 @@ footer p.copy {
   }
 }
 
+.email {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.email:hover {
+  color: #C31432;
+  font-weight: 600;
+  transform: scale(.96);
+}
 
 
 /* ==========================================================================
