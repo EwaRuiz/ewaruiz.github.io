@@ -1910,6 +1910,10 @@ img.surveys, .stories, .wireframes, .branding {
   max-width: 100%;
 }
 
+img.hospiwf {
+  max-width: 100%;
+}
+
 img.branding {
   margin-top: 32px;
 }
@@ -1923,11 +1927,22 @@ img.iterations2 {
   margin-left: 88px;
 }
 
+img.hmockups {
+  max-width: 100%;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
 @media only screen and (max-width: 768px) {
 
-  img.wireframes2 {
+  img.hospiwf {
     max-width: 100%:
   }
+
+  img.hmockups {
+    max-width: 100%;
+  }
+
 
   img.iterations {
     max-width: 10%;
@@ -2026,13 +2041,16 @@ img.surveys2, img.sketches2, img.wireframes2, img.mockups2, img.surveys3, img.st
     margin-left: 32px;
   }
 
-  img.wireframes2 {
-    visibility: visible;
-    display: block;
-    max-width: 80%;
+  img.hospiwf {
+    max-width: 85%;
     margin: auto;
     margin-bottom: 40px;
   }
+
+  img.hmockups {
+    max-width: 80%;
+  }
+
 }
 
 img.companylogo, .flow, .sketches, .moodboard, .logoprocess, .test1, .test2,
