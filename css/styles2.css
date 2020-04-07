@@ -1904,7 +1904,7 @@ section.center3 {
 
 /* --------------------- images ------------- */
 
-img.surveys, .stories, .wireframes, .branding {
+img.surveys, .stories, .branding {
   margin-top: 0px;
   margin-bottom: 0px;
   max-width: 100%;
@@ -1927,7 +1927,7 @@ img.iterations2 {
   margin-left: 88px;
 }
 
-img.hmockups {
+img.hospihf {
   max-width: 100%;
   margin-top: 24px;
   margin-bottom: 32px;
@@ -1939,7 +1939,7 @@ img.hmockups {
     max-width: 100%:
   }
 
-  img.hmockups {
+  img.hospihf {
     max-width: 100%;
   }
 
@@ -1976,7 +1976,7 @@ img.surveys2, img.sketches2, img.mockups2, img.surveys3, img.stories3, img.usert
 
 @media only screen and (max-width: 414px) {
 
-  img.surveys, img.sketches, img.wireframes, img.mockups, img.stories, img.branding, img.logoprocess, img.test1, img.test2, img.test3, img.usertesting2 {
+  img.surveys, img.sketches, img.mockups, img.stories, img.branding, img.logoprocess, img.test1, img.test2, img.test3, img.usertesting2 {
     visibility: hidden;
     display: none;
   }
@@ -2047,7 +2047,7 @@ img.surveys2, img.sketches2, img.mockups2, img.surveys3, img.stories3, img.usert
     margin-bottom: 40px;
   }
 
-  img.hmockups {
+  img.hospihf {
     max-width: 80%;
   }
 
